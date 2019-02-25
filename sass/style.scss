@@ -9,7 +9,8 @@
     font-family: 'Roboto', sans-serif;    
 }
 body{
-    background-color: #000;
+    // background-color: #000;
+    background-color: #ccc;
 }
 a{
     text-decoration: none;
@@ -42,7 +43,6 @@ img{
     font-size: 0;
 }
 .btn-mobile{
-    cursor: pointer; 
     width: 56px; 
     height: 56px; 
     float: right; 
@@ -52,9 +52,7 @@ img{
     background-color: rgb(237, 20, 91); 
     cursor: pointer;
 }
-.btn-mobile:hover{
-    filter:alpha(opacity=100);
-}
+
 /* MENU */
 .menu{
     display: none;
@@ -89,7 +87,7 @@ img{
 }
 .menu li a:hover{
     border-left:1px solid rgb(237, 20, 91);}
-/* MENU */
+/* BANNER */
 .banner{
     display: flex;
     align-items: center;
