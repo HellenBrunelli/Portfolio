@@ -40,12 +40,22 @@ label{
     width: 100%; 
     float: left; 
     padding: 3% 4%;
+    @media (min-width:768px) {
+        display: flex;
+        justify-content: sp;
+        padding: 1%;
+        justify-content: space-between;
+    }
 }
-.logo{width: 56px;
+.logo{
+    width: 56px;
     height: 56px; 
     float: left; 
     background: url(../img/layout/logo.png) center center/56px no-repeat;
     font-size: 0;
+    @media (min-width:768px) {
+        margin-left: 94%;
+    }
 }
 .btn-mobile{
     width: 56px; 
@@ -56,6 +66,9 @@ label{
     border-radius: 56px; 
     background-color: rgb(237, 20, 91); 
     cursor: pointer;
+    @media (min-width:768px) {
+        display:none;
+    }
 }
 
 /* MENU */
@@ -67,6 +80,44 @@ label{
     background-color: rgba(0,0,0,0.9); 
     top: 0; 
     left: 0;
+    @media (min-width:768px) {
+        display:flex;
+        position: initial;
+        width: 79%;
+    }
+    & ul{
+        width: 100%; 
+        float: left; 
+        text-align: center;
+        @media (min-width:768px) {
+            display:flex;
+            margin-top: 1.5%;
+            justify-content: space-evenly;
+            width: 82%;
+            margin-left: 14%;
+        }
+    }
+    & li{
+        padding: 1.5%;
+        @media (min-width:768px) {
+            font-size: 0.7em;
+            &:hover{
+                color: $colorFont;
+                font-size: 0.9em;
+            }
+        }
+    }
+    & li a {
+        font-size: 2em; 
+        color: #fff; 
+        padding: 1.5% 3%; 
+        cursor: pointer;
+        &:hover{
+            @media (min-width:768px) {
+                border-left:1px solid $colorFont;
+            }
+        }
+    }
 }
 .btn-close{
     font-size: 2.8em; 
@@ -75,23 +126,12 @@ label{
     cursor: pointer; 
     margin-right: 6%; 
     margin-top: 3%;
+    @media (min-width:768px) {
+        display:none;
+    }
 }
-.menu ul{
-    width: 100%; 
-    float: left; 
-    text-align: center;
-}
-.menu li{
-    padding: 1.5%
-}
-.menu li a {
-    font-size: 2em; 
-    color: #fff; 
-    padding: 1.5% 3%; 
-    cursor: pointer;
-}
-.menu li a:hover{
-    border-left:1px solid rgb(237, 20, 91);}
+
+
 /* BANNER */
 .banner{
     display: flex;

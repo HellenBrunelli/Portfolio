@@ -44,12 +44,33 @@ label {
   padding: 3% 4%;
 }
 
+@media (min-width: 768px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: sp;
+        -ms-flex-pack: sp;
+            justify-content: sp;
+    padding: 1%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .logo {
   width: 56px;
   height: 56px;
   float: left;
   background: url(../img/layout/logo.png) center center/56px no-repeat;
   font-size: 0;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-left: 94%;
+  }
 }
 
 .btn-mobile {
@@ -63,6 +84,12 @@ label {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .btn-mobile {
+    display: none;
+  }
+}
+
 /* MENU */
 .menu {
   display: none;
@@ -74,13 +101,14 @@ label {
   left: 0;
 }
 
-.btn-close {
-  font-size: 2.8em;
-  color: #fff;
-  float: right;
-  cursor: pointer;
-  margin-right: 6%;
-  margin-top: 3%;
+@media (min-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: initial;
+    width: 79%;
+  }
 }
 
 .menu ul {
@@ -89,8 +117,32 @@ label {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1.5%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 82%;
+    margin-left: 14%;
+  }
+}
+
 .menu li {
   padding: 1.5%;
+}
+
+@media (min-width: 768px) {
+  .menu li {
+    font-size: 0.7em;
+  }
+  .menu li:hover {
+    color: #ed145b;
+    font-size: 0.9em;
+  }
 }
 
 .menu li a {
@@ -100,8 +152,25 @@ label {
   cursor: pointer;
 }
 
-.menu li a:hover {
-  border-left: 1px solid #ed145b;
+@media (min-width: 768px) {
+  .menu li a:hover {
+    border-left: 1px solid #ed145b;
+  }
+}
+
+.btn-close {
+  font-size: 2.8em;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+  margin-right: 6%;
+  margin-top: 3%;
+}
+
+@media (min-width: 768px) {
+  .btn-close {
+    display: none;
+  }
 }
 
 /* BANNER */
