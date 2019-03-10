@@ -284,8 +284,8 @@ label {
 .aboutme h2 {
   margin-top: 5%;
   color: #ed145b;
-  font-size: 1.6em;
-  font-weight: 700;
+  font-size: 2.3em;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
