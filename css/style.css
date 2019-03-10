@@ -390,6 +390,8 @@ label {
           align-items: center;
   text-align: center;
   margin-top: 2%;
+  width: 100%;
+  height: 100%;
 }
 
 .inner h4 {
@@ -397,6 +399,8 @@ label {
   color: #fff;
   margin-top: 2%;
   margin-left: 16px;
+  width: 100%;
+  height: 52%;
 }
 
 .inner a {
@@ -408,6 +412,7 @@ label {
   margin-bottom: 21px;
   font-size: 1.1rem;
   font-weight: 300;
+  width: 50%;
 }
 
 /*FORM*/
