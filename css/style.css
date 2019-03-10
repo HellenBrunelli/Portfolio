@@ -308,7 +308,7 @@ label {
   color: #ed145b;
 }
 
-.worksh2 {
+.works h2 {
   color: #ed145b;
   text-align: center;
   margin: 25px;
@@ -374,7 +374,7 @@ label {
 .work a img {
   border-radius: 3%;
   max-width: 100%;
-  height: auto;
+  height: 14rem;
 }
 
 .inner {
