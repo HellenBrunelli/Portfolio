@@ -26,6 +26,10 @@ img {
   max-width: 100%;
 }
 
+label {
+  display: none;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -279,6 +283,56 @@ img {
   }
 }
 
+.works {
+  width: 100%;
+  padding: 15% 4%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.works:hover {
+  color: #ed145b;
+}
+
+.worksh2 {
+  color: #ed145b;
+  text-align: center;
+  margin: 25px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .works-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+}
+
 .work {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,32 +344,23 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.works {
-  width: 100%;
-  padding: 15% 4%;
-  height: auto;
-}
-
-.works:hover {
-  color: #ed145b;
-}
-
-.works h2 {
-  color: #ed145b;
-  text-align: center;
-  margin: 25px;
-  font-size: 2em;
-  font-weight: 700;
-}
-
-.work {
   padding: 2%;
   border-radius: 2%;
   width: 100%;
   text-align: left;
   margin-bottom: 3%;
+}
+
+@media (min-width: 768px) {
+  .work {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .work {
+    width: 33%;
+  }
 }
 
 .work:hover {
@@ -365,6 +410,31 @@ img {
   font-weight: 300;
 }
 
+/*FORM*/
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  color: #fff;
+}
+
+.form label {
+  color: #fff;
+}
+
+.contact-form h2 {
+  margin-bottom: 7vh;
+}
+
+/*redes sociais*/
 .social-network {
   display: -webkit-box;
   display: -ms-flexbox;

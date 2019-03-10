@@ -1,3 +1,5 @@
+$colorFont: rgb(237, 20, 91);
+
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +21,10 @@ ul{
 }
 img{
     max-width: 100%;
+}
+
+label{
+    display: none;
 }
 
 .container{
@@ -112,7 +118,7 @@ img{
     font-weight: 700;
 }
 .title h2 span{
-    color: rgb(237, 20, 91);
+    color: $colorFont;
 }
 .title h3{
     font-size: 1.5em; 
@@ -128,7 +134,7 @@ img{
     cursor: pointer; 
     padding: 5%; 
     background-color: transparent; 
-    color: rgb(237, 20, 91); 
+    color: $colorFont;
 }
 
 /*ABOUTME*/ 
@@ -151,7 +157,7 @@ img{
 }
 .aboutme h2{
     margin-top: 5%;
-    color: rgb(237, 20, 91);
+    color: $colorFont;
     font-size: 1.6em;
     font-weight: 700;
     @media(max-width: 1024px){
@@ -184,7 +190,7 @@ img{
 }
 .aboutme-description a{
     border: solid 2px rgb(237, 20, 91);
-    color: rgb(237, 20, 91);
+    color: $colorFont;
     border-radius: 10px;
     padding: 7px;
     margin-top: 18px;
@@ -203,34 +209,53 @@ img{
     }
 }
 
-.work{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .works{
     width: 100%; 
     padding: 15% 4%;
     height: auto;
-}
-.works:hover{
-    color: rgb(237, 20, 91);
+    @media (min-width:768px){
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+    }
+    &:hover{
+        color: $colorFont
+    }
+    &h2{
+        color:$colorFont;
+        text-align: center;
+        margin: 25px;
+        font-size: 2em;
+        font-weight: 700;
+    } 
+    &-container{
+        @media (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction: row;
+            width: 100%;
+        }
+    }
 }
 
-.works h2{
-    color:rgb(237, 20, 91);
-    text-align: center;
-    margin: 25px;
-    font-size: 2em;
-    font-weight: 700;
-}    
+
 .work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2%;
     border-radius: 2%;
     width: 100%; 
     text-align: left; 
     margin-bottom: 3%; 
+    @media (min-width:768px) {
+        width: 50%
+    }
+    @media (min-width:1024px) {
+        width: 33%;
+    }
 }
 .work:hover{
     border: solid 2px rgba(237, 20, 91, 0.8);
@@ -259,7 +284,7 @@ img{
 
 .inner a{
     border: solid 2px rgb(237, 20, 91);
-    color: rgb(237, 20, 91);
+    color: $colorFont;
     border-radius: 10px;
     padding: 7px;
     margin-top: 18px;
@@ -267,6 +292,28 @@ img{
     font-size: 1.1rem;
     font-weight: 300;    
 }
+
+/*FORM*/ 
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    color: #fff;
+}
+
+.form label{
+    color: #fff;
+}
+
+.contact-form h2{
+    margin-bottom: 7vh;
+}
+
+
+
+/*redes sociais*/
 
 .social-network{
     display: flex;
@@ -278,7 +325,7 @@ img{
 .social-network a{
     cursor: pointer;
     text-shadow: rgba(237, 20, 91, 0.75) 4px 0px 20px;
-    color: rgb(237, 20, 91);
+    color: $colorFont;
     @media(max-width: 1024px){
         font-size: 25px;
     }
@@ -301,6 +348,5 @@ img{
     justify-content: center;
     color: rgb(237, 20, 91); 
 }
-
 
 

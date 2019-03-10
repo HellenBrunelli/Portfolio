@@ -45,7 +45,7 @@
         <div class="container display-aboutme">
             <h2>Sobre mim</h2>
             <div class="aboutme-photo">
-                <img src="img/foto-perfil.jpeg" alt="foto perfil Hellen">
+                <img src="img/foto-perfil.jpeg" alt="Foto de perfil Hellen Brunelli">
             </div>
             <div class="aboutme-description">
                 <h4>".. em
@@ -65,57 +65,76 @@
             </div>
         </div>
     </section>
-    <section id="works" class="works">
+    <section class="works" id="works">
         <h2>Meus Projetos</h2>
-        <article class="work item1">
-            <a href="#">
-                <figure>
-                    <img src="img/works/people-connect-img.png" alt="site people connect">
-                </figure>
-            </a>
-            <div class="inner">
-                <h4>Projeto pessoal desenvolvido no final do bootcamp Reprograma.</h4>
-                <a href="https://people-connect.netlify.com/">Acesse aqui</a>
-            </div>
-        </article>
-        <article class="work item2">
-            <a href="#">
-                <figure>
-                    <img src="img/works/mundo-gelado-img.png" alt="site agência mundo gelado">
-                </figure>
-            </a>
-            <div class="inner">
-                <h4>Agência Mundo Gelado. Desenvolvido durante aulas de Design Responsivo e Pré-Processadores.</h4>
-                <a href="https://agenciamundogelado.netlify.com/">Acesse aqui</a>
-            </div>
-        </article>
-        <article class="work item3">
-            <a href="#">
-                <figure>
-                    <img src="img/works/coolab.png" alt="To do List">
-                </figure>
-            </a>
-            <div class="inner">
-                <h4>Site da ONG Coolab, desenvolvido a partir de Layout estabelecido pelo cliente.</h4>
-                <a href="http://www.coolab.org/">Acesse aqui</a>
-            </div>
-        </article>
-        <article class="work item4">
-            <a href="#">
-                <figure>
-                    <img src="img/works/to-do-list.png" alt="To do List">
-                </figure>
-            </a>
-            <div class="inner">
-                <h4>To Do List</h4>
-                <a href="https://todolistmyapp.netlify.com/?_ga=2.109650245.118111123.1550601085-1337976980.1543936658">Acesse
-                    aqui</a>
-            </div>
-        </article>
-        <article class="work item5">
+        <div class="works-container">
+            <article class="work item1">
                 <a href="#">
                     <figure>
-                        <img src="img/works/Twitter Project.png" alt="Ex Twitter">
+                        <img src="img/works/people-connect-img.png"
+                            alt="print do site people connect onde na foto principal mostra uma menina assoprando uma flor">
+                    </figure>
+                </a>
+                <div class="inner">
+                    <h4>Projeto pessoal desenvolvido no final do bootcamp Reprograma.</h4>
+                    <a href="https://people-connect.netlify.com/">Acesse aqui</a>
+                </div>
+            </article>
+            <article class="work item2">
+                <a href="#">
+                    <figure>
+                        <img src="img/works/mundo-gelado-img.png"
+                            alt="print do site agência mundo gelado onde mostra a imagem de um iceberg">
+                    </figure>
+                </a>
+                <div class="inner">
+                    <h4>Agência Mundo Gelado. Desenvolvido durante aulas de Design Responsivo e Pré-Processadores.</h4>
+                    <a href="https://agenciamundogelado.netlify.com/">Acesse aqui</a>
+                </div>
+            </article>
+            <article class="work item3">
+                <a href="#">
+                    <figure>
+                        <img src="img/works/coolab.png"
+                            alt="print de tela do site coolab onde mostra uma foto de um homem numa escada apoiada num poste de energia elétrica, e imagem de comunidades ja alcançadas pelo projeto">
+                    </figure>
+                </a>
+                <div class="inner">
+                    <h4>Site da ONG Coolab, desenvolvido a partir de Layout estabelecido pelo cliente. Mobile first</h4>
+                    <a href="http://www.coolab.org/">Acesse aqui</a>
+                </div>
+            </article>
+            <article class="work item4">
+                <a href="#">
+                    <figure>
+                        <img src="img/works/o-boticario-challenge.png"
+                            alt="print do challenge o boticario onde estão dispostos produtos de beleza">
+                    </figure>
+                </a>
+                <div class="inner">
+                    <h4>Challenge O Boticário, desenvolvido em mobile first, e os produtos são carregados da API</h4>
+                    <a href="https://oboticariochallenge.netlify.com/">Acesse aqui</a>
+                </div>
+            </article>
+
+            <article class="work item5">
+                <a href="#">
+                    <figure>
+                        <img src="img/works/to-do-list.png" alt="To do Lisprint da interface de uma lista de tarefas">
+                    </figure>
+                </a>
+                <div class="inner">
+                    <h4>To Do List</h4>
+                    <a
+                        href="https://todolistmyapp.netlify.com/?_ga=2.109650245.118111123.1550601085-1337976980.1543936658">Acesse
+                        aqui</a>
+                </div>
+            </article>
+            <article class="work item6">
+                <a href="#">
+                    <figure>
+                        <img src="img/works/Twitter Project.png"
+                            alt="print da tela de uma réplica do twitter desenvolvido como parte dos estudos">
                     </figure>
                 </a>
                 <div class="inner">
@@ -124,7 +143,17 @@
                         aqui</a>
                 </div>
             </article>
+        </div>
     </section>
+
+    <!-- <section class="contact-form">
+        <h2>Envie um email</h2>
+        <form class="form" action="">
+            <label for="name">Name</label>
+            <input id="name" class="name" type="text" placeholder="Name">
+
+        </form>
+    </section> -->
 
     <section id="contact" class="social-network">
         <a href="https://github.com/HellenBrunelli">
@@ -145,14 +174,14 @@
         </a>
         <a id="email">
             <i class="icon fas fa-envelope-square"></i>
-        </a>      
+        </a>
     </section>
     <div id="box-email" class="box-email">
         <h2>{ hellenbrunelli01@gmail.com }</h2>
 
     </div>
     <footer class="footer">
-            <h6>Copyright © Hellen Brunelli 2019</h6>
+        <h6>Copyright © Hellen Brunelli 2019</h6>
     </footer>
 
 
