@@ -194,31 +194,42 @@ label{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width:768px) {
+        flex-direction: row;
+        margin-top: 5%;
+        margin-bottom: 12%;
+    }
 }
 .aboutme h2{
     margin-top: 5%;
     color: $colorFont;
     font-size: 1.6em;
     font-weight: 700;
-    @media(max-width: 1024px){
+    @media (min-width:768px) {
+        margin-top: 0;
         font-size: 2.5em;
-        font-weight: 400;
+        font-weight: 300;
     }
+    
 }
 .aboutme-photo{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    @media (min-width:768px) {
+        height: 65vh;
+        margin-top: -12%;
+    }
 }
 .aboutme-photo img{
     width: 50%;
     margin: 8% 0%;
     border-radius: 30%;
-    @media(max-width: 1024px){
-        width: 35%;
-        margin: 4% 0%;   
+    @media (min-width:768px) {
+        width: 54%;
     }
+   
 }
 
 .aboutme-description{
@@ -244,9 +255,12 @@ label{
     padding: 0% 4%;
     width: 100%;
     text-align: center;
-    @media(max-width: 1024px){
+    @media (min-width:768px) {
+        font-size: 1.2em;
+    }  
+    @media (min-width:1024px) {
         font-size: 1.4em;
-    }
+    }   
 }
 
 .works{
@@ -254,6 +268,7 @@ label{
     padding: 15% 4%;
     height: auto;
     @media (min-width:768px){
+        padding: 10% 4%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -275,6 +290,7 @@ label{
             justify-content: space-around;
             flex-direction: row;
             width: 100%;
+            margin-top: 2%;
         }
     }
 }
@@ -370,9 +386,7 @@ label{
     cursor: pointer;
     text-shadow: rgba(237, 20, 91, 0.75) 4px 0px 20px;
     color: $colorFont;
-    @media(max-width: 1024px){
-        font-size: 25px;
-    }
+
 }
 
 

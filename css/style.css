@@ -270,6 +270,17 @@ label {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .display-aboutme {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 12%;
+  }
+}
+
 .aboutme h2 {
   margin-top: 5%;
   color: #ed145b;
@@ -277,10 +288,11 @@ label {
   font-weight: 700;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .aboutme h2 {
+    margin-top: 0;
     font-size: 2.5em;
-    font-weight: 400;
+    font-weight: 300;
   }
 }
 
@@ -297,16 +309,22 @@ label {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .aboutme-photo {
+    height: 65vh;
+    margin-top: -12%;
+  }
+}
+
 .aboutme-photo img {
   width: 50%;
   margin: 8% 0%;
   border-radius: 30%;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .aboutme-photo img {
-    width: 35%;
-    margin: 4% 0%;
+    width: 54%;
   }
 }
 
@@ -346,7 +364,13 @@ label {
   text-align: center;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
+  .aboutme-description h4 {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1024px) {
   .aboutme-description h4 {
     font-size: 1.4em;
   }
@@ -360,6 +384,7 @@ label {
 
 @media (min-width: 768px) {
   .works {
+    padding: 10% 4%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -399,6 +424,7 @@ label {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
+    margin-top: 2%;
   }
 }
 
@@ -526,12 +552,6 @@ label {
   cursor: pointer;
   text-shadow: rgba(237, 20, 91, 0.75) 4px 0px 20px;
   color: #ed145b;
-}
-
-@media (max-width: 1024px) {
-  .social-network a {
-    font-size: 25px;
-  }
 }
 
 .footer {
