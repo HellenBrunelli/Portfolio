@@ -386,7 +386,10 @@ label{
     cursor: pointer;
     text-shadow: rgba(237, 20, 91, 0.75) 4px 0px 20px;
     color: $colorFont;
-
+    font-size: 1.4em;
+    @media (min-width:768px) {
+        font-size: 1.8em;
+    }
 }
 
 
@@ -406,5 +409,3 @@ label{
     justify-content: center;
     color: rgb(237, 20, 91); 
 }
-
-
