@@ -64,7 +64,7 @@ label{
     text-align: center; 
     color: #fff; 
     border-radius: 56px; 
-    background-color: rgb(237, 20, 91); 
+    background-color: rgb(237, 20, 91);
     cursor: pointer;
     @media (min-width:768px) {
         display:none;
@@ -342,7 +342,7 @@ label{
 }
 
 .inner a{
-    border: solid 2px rgb(237, 20, 91);
+    // border: solid 2px rgb(237, 20, 91);
     color: $colorFont;
     border-radius: 10px;
     padding: 7px;
